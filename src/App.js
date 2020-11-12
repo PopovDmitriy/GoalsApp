@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+// import Button from './ui/Button/Button'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    state = {
+        appState: {
+
+        }
+    }
+
+    onClickToggleHandler () {
+        let button = document.querySelector('button');
+        button.classList.toggle('button--focus')
+    }
+
+    render() {
+        return (
+            <>
+                <Header onClickToggle = {this.onClickToggleHandler.bind(this)}/>
+                <Footer />
+            </>
+        )
+    }
 }
 
-export default App;
+export default App

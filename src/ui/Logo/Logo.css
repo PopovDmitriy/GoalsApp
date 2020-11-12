@@ -1,0 +1,25 @@
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+    background: #1f2326;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2), -5px -5px 5px 0px rgba(34, 60, 80, 0.2);
+    color: #b1bac2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header__logo svg {
+    width: 50px;
+    fill: #b3bcc5;
+}
+
+.header__logo p {
+    font-size: 1.7rem;
+}

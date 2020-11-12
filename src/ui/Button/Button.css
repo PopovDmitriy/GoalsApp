@@ -1,0 +1,45 @@
+.button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    color: #b1bac2;
+    margin: 10px;
+    background: #1f2326;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2), -5px -5px 5px 0px rgba(34, 60, 80, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2d3035;
+}
+
+.button--focus {
+    box-shadow: 5px 5px 5px 0px rgba(34, 60, 80, 0.2), -5px -5px 5px 0px rgba(0, 0, 0, 0.2) !important;
+}
+
+.button--active {
+    display: none;
+}
+
+.button--focus > .button--active {
+    display: block;
+}
+
+.button--focus > .button--extinct {
+    display: none;
+}
+
+svg {
+    stroke: #b3bcc5;
+}
