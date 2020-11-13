@@ -1,0 +1,13 @@
+.hello__container {
+    color: #b3bcc5;
+    text-align: center;
+    margin: 20px;
+}
+
+.hello__container h2 {
+    font-size: 3rem;
+}
+
+.hello__container p {
+    font-size: 1.5rem;
+}
